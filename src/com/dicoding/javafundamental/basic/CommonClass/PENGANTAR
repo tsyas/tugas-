@@ -1,0 +1,17 @@
+- Generic
+Generics pada Java memperbolehkan tipe (String, Integer, dll, serta
+user defined) bisa menjadi suatu parameter untuk metode, class dan interface.
+Generics juga berfungsi untuk type casting dan compile time safety.
+
+- Exception
+Eror adalah hal yang perlu kita tangani. Nah, di sini  kita bisa menggunakan exception.
+
+- Input Output
+Di Java sudah tersedia library untuk membaca input dari suatu berkas dan juga menuliskan data ke suatu berkas.
+
+- Date Time
+Di Java sudah tersedia library yang khusus berurusan dengan waktu.
+
+- Casting
+Mengubah suatu tipe data atau objek menjadi tipe data atau objek lainnya,
+akan menjadi mudah dengan menggunakan casting yang sudah tersedia di dalam Java.

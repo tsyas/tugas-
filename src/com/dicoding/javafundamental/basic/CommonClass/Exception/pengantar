@@ -1,0 +1,35 @@
+    Exception adalah event (kejadian) yang mengacaukan jalannya suatu program.
+Worst case scenario ketika suatu program mengalami exception adalah termination.
+Termination (penutupan) program adalah hal yang harus dihindari. Untuk itu kita harus
+menangani exception yang terjadi di program, atau yang biasa disebut sebagai handle exception.
+
+Kode yang baik adalah yang terhindar dari segala bentuk kejadian yang menyebabkan efek buruk
+kepada program. Oleh karena itu mari kita kenali dulu berbagai macam exception yang ada di Java.
+
+Pada dasarnya ada 3 jenis exception berdasarkan kategorinya.
+
+- Checked Exception,
+ adalah exception yang terjadi saat compile time.
+Di sini programmer harus menambahkan kode untuk meng-handle exception kategori ini.
+Jika tidak di-handle maka kode yang dituliskan akan error dan tidak akan bisa dikompilasi.
+Contohnya adalah exception java.io.FileNotFoundException.
+
+- Unchecked Exception,
+ adalah exception yang terjadi saat execution time.
+ Eror ini terjadi dalam lingkup internal dari aplikasi kita,biasanya terjadi
+ karena salah penulisan kode atau penggunaan salah terhadap satu API.
+ Contohnya adalah NullPointerException.
+
+Error,
+ adalah exception yang diluar kendali user atau programmer. Eror ini terjadi
+di lingkup eksternal dari aplikasi kita. Ketika exception ini terjadi maka
+tidak ada yang bisa kita lakukan untuk mengatasinya, contohnya ketika perangkat
+kerasnya rusak saat kita ingin membaca data.
+
+Dari definisi di atas maka error exception dan unchecked exception termasuk dari
+exception yang berada pada execution time. Sebabnya, keduanya hanya dialami ketika
+program sudah berjalan. Perbedaanya adalah unchecked berada di dalam internal program kita,
+sedangkan error exception berada di eksternal program kita.
+
+Kemudian kode apa yang harus kita tambahkan untuk mengatasi berbagai macam exception tersebut?
+Kita harus kenal dengan 3 block kode yaitu try, catch, dan finally.
