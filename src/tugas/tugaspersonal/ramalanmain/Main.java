@@ -8,19 +8,19 @@ public class Main {
     static Scanner inputan = new Scanner(System.in);
     static Random randomNum = new Random();
 
-    public static void main(String [] args) {
+    public static void main(String[] args) {
         System.out.println(" Selamat Datang Di Program Ramalan Cupu");
         System.out.println("++++++++++++++++++++++++++++++++++++++++");
         System.out.println("DATA ANDA :");
         System.out.println("♡♡♡♡♡");
-        System.out.print("Masukan Nama Anda: " );
+        System.out.print("Masukan Nama Anda: ");
         String namaSaya = inputan.nextLine();
         System.out.print("Masukan Umur Anda: ");
         Integer umurSaya = Integer.valueOf(inputan.nextLine());
         System.out.println("");
         System.out.println("DATA PASANGAN ANDA :");
         System.out.println("♡♡♡♡♡♡♡♡♡");
-        System.out.print("Masukan Nama Pasangan Anda: " );
+        System.out.print("Masukan Nama Pasangan Anda: ");
         String namaPasanganSaya = inputan.nextLine();
         System.out.print("Masukan Umur Pasangan Anda: ");
         Integer umurPasanganSaya = Integer.valueOf(inputan.nextLine());
@@ -34,13 +34,13 @@ public class Main {
         System.out.println("  / づ :¨·.·¨:");
         System.out.println("       `·..·‘ ");
         System.out.println("");
-        System.out.println(namaPasanganSaya + " "+ umurPasanganSaya);
+        System.out.println(namaPasanganSaya + " " + umurPasanganSaya);
         System.out.println("");
         Random r = new Random();
         int low = 50;
         int high = 100;
-        Float kecocokan = r.nextFloat(high-low) + low;
-        System.out.println("kecocokan anda dengan pasangan anda adalah :"+ String.format("%.2f", kecocokan) + "%");
+        Float kecocokan = (float) (r.nextInt(high - low) + low);
+        System.out.println("kecocokan anda dengan pasangan anda adalah :" + String.format("%.2f", kecocokan) + "%");
         System.out.println("Terima Kasih karena telah menggunakan jasa ramalan kami..^^");
     }
 }
