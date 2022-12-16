@@ -1,0 +1,13 @@
+Non Access Modifier
+Java juga mengenal modifier lainnya yaitu tipe non access modifier.
+Ada beberapa non access modifier yaitu static, final, transient,  dan synchronize.
+Non access modifier memiliki fungsi yang beragam tergantung dari kebutuhannya.
+
+ - Static
+    Yang pertama adalah static. Ia digunakan untuk mendeklarasikan variabel atau
+ metode yang berdiri sendiri tanpa perlu instance dari suatu kelas. Ada dua macam
+ non access modifier static yaitu static variable dan static methods.
+
+
+ - Static Variable
+Variabel yang berdiri sendiri tanpa perlu instance dari kelas.
