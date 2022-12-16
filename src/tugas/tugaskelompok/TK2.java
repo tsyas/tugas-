@@ -1,5 +1,6 @@
 package tugas.tugaskelompok;
 // anastasya sabrina - 2602174623
+
 // kanisa anjani santoso - 2602199304
 
 import java.util.Scanner;
@@ -7,7 +8,8 @@ import java.util.Scanner;
 public class TK2 {
 
     static Scanner input = new Scanner(System.in);
-    public static void DeretBilangan(){
+
+    public static void DeretBilangan() {
         System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
         System.out.print("Masukan sembarang angka [5-20] : ");
         Integer angka = Integer.valueOf(input.nextLine());
@@ -18,14 +20,12 @@ public class TK2 {
         int jml = 1;
 
         // Deret bilangan genap
-        System.out.println( angka + " Deret bilangan genap:");
+        System.out.println(angka + " Deret bilangan genap:");
         double genap = 0;
-        double totalGenap = 0;
-        for (int i = 2; jml <= angka; i+=2) {
+        for (int i = 2; jml <= angka; i += 2) {
             System.out.print(i + " ");
             if (i % 2 == 0) {
                 genap += i;
-                totalGenap += genap;
                 jml++;
             }
         }
@@ -48,9 +48,8 @@ public class TK2 {
         System.out.println("Hasil Penjumlahan = " + ganjil);
         System.out.println(" ");
 
-
         // Deret bilangan Fibonacci
-        System.out.println( angka + " Deret bilangan Fibonacci:");
+        System.out.println(angka + " Deret bilangan Fibonacci:");
         double fibonacci = 1;
         int a = 0, b = 1, c;
         System.out.print(b + " ");
@@ -66,7 +65,7 @@ public class TK2 {
         System.out.println();
     }
 
-    public static void main(String[]args) {
+    public static void main(String[] args) {
         System.out.print("Masukan Nama Anda (1-25) : ");
         String nama = input.nextLine();
         if (nama.trim().length() == 0) {
@@ -91,18 +90,16 @@ public class TK2 {
         System.out.println(" ");
         System.out.println("\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
         System.out.println("\nRegistrasi Sukses..");
-        System.out.println("Selamat datang " + nama + "  [NIM : " + nim + "].. ^-^" );
+        System.out.println("Selamat datang " + nama + "  [NIM : " + nim + "].. ^-^");
         System.out.println(" ");
         System.out.println("Mari belajar deret bilangan..");
         String u = "y";
-        while (true)
-        {
-            if (!u.trim().toLowerCase().equals("y")) break;
+        while (true) {
+            if (!u.trim().toLowerCase().equals("y"))
+                break;
             DeretBilangan();
             System.out.println("Anda ingin mengulang? [y/t]");
             u = input.nextLine();
         }
     }
 }
-
-
