@@ -2,6 +2,7 @@ package tugas.tugaspersonal.TP2;
 import java.util.Scanner;
 //anastasya sabirna 2602174623
 
+
 public class tp2 {
     static Scanner input = new Scanner(System.in);
     public static void DAGF(){
