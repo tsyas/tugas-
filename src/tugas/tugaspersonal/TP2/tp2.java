@@ -31,13 +31,18 @@ public class tp2 {
 
         // Faktorial
         int faktorial = 1;
-        System.out.println("Faktorial dari " + ba + ": ");
-        for (int i = 1; i <= ba; i++) {
-            System.out.print(i + " ");
-            if (i > ba) {
-                System.out.print("* ");}
-            faktorial *= i;}
+        System.out.println("Faktorial dari : " + ba );
+        for (int i = 1 ;i <= ba ; i++) {
+            faktorial = faktorial * i;
+            if(ba-i != 0){
+                System.out.print(ba-i + " ");
+            }
+            if(ba != i && ba != i+1){
+                System.out.print( "* ");
+            }
+        }
         System.out.println("= " + faktorial);
+        
     }
     public static void main(String[]args) {
         System.out.println("Belajar Deret Aritmatika, Geometri dan menghitung Faktorial");
