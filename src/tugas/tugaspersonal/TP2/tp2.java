@@ -43,7 +43,7 @@ public class tp2 {
                 System.out.print("* ");
             }
         }
-        System.out.println("= " + faktorial + "* ");
+        System.out.println("= ");
 
     }
     public static void main(String[]args) {
