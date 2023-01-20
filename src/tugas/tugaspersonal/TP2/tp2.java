@@ -36,12 +36,14 @@ public class tp2 {
             faktorial = faktorial * i;
             if (ba - i != 0) {
                 System.out.print(ba - i + " ");
+
             }
             if (ba != i && ba != i + 1) {
+
                 System.out.print("* ");
             }
         }
-        System.out.println("= " + faktorial);
+        System.out.println("= " + faktorial + "* ");
 
     }
     public static void main(String[]args) {
