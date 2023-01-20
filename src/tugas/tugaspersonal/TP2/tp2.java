@@ -39,7 +39,11 @@ public class tp2 {
             }
             if (ba != i && ba != i + 1) {
                 System.out.print("* ");
-            }}System.out.println("= " + faktorial);}
+            }
+        }
+        System.out.println("= " + faktorial);
+    }
+
     public static void main(String[]args) {
         System.out.println("Belajar Deret Aritmatika, Geometri dan menghitung Faktorial");
         String u = "y";
